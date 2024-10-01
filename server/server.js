@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", Router);
 
-connection(URL);
+connection();
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
