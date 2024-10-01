@@ -49,10 +49,10 @@ const MERCHANT_STATUS_URL =
   "https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/status";
 
 // const redirectUrl = "http://localhost:8000/status";
-const redirectUrl = "status";
+const redirectUrl = "https://flipkart-36iv.onrender.com/status";
 
-const successUrl = "http://localhost:3000";
-const failureUrl = "http://localhost:3000";
+const successUrl = "https://visionary-zabaione-4657ed.netlify.app/";
+const failureUrl = "https://visionary-zabaione-4657ed.netlify.app/";
 
 app.post("/create-order", async (req, res) => {
   const { name, mobileNumber, amount } = req.body;
