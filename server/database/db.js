@@ -15,9 +15,9 @@
 
 import mongoose from "mongoose";
 
-export const connection = (URL) => {
+export const connection = () => {
   mongoose
-    .connect(process.env.MONGO_URI, URL, {
+    .connect(process.env.MONGO_URI,{
       dbNAME: "FlipkartClone",
     })
     .then(() => {
